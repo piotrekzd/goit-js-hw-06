@@ -23,7 +23,7 @@ const galleryImages = images
     newGallery.insertAdjacentHTML(
       'afterbegin',
       `<li class='picture'>
-        <img src='${image.url}' alt='${image.alt}' width='200' height='200' />
+        <img src='${image.url}' alt='${image.alt}' width='300' height='200' />
       </li>`
     );
   });
