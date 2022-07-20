@@ -19,6 +19,11 @@ newGallery.style.gap = '20px';
 newGallery.style.listStyle = 'none';
 
 const galleryImages = images
-  .forEach(image => {
-    newGallery.insertAdjacentHTML('afterbegin', `<li class='picture'><img src='${image.url}' alt='${image.alt}' width='200' height='200' /></li>`);
+  .map((image) => {
+    newGallery.insertAdjacentHTML(
+      'afterbegin',
+      `<li class='picture'>
+        <img src='${image.url}' alt='${image.alt}' width='200' height='200' />
+      </li>`
+    );
   });
